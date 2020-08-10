@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-pod
+  annotations:
+    annotation1: val1
+    annotation2: val2
+  labels:
+    label1: val1_label
+    label2: val2_label
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:1.13
